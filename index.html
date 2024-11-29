@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokébola</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <audio id="audio1">
+        <source src="audio/abertura-pok-firered_[cut_18sec].mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+
+    <audio id="audio2">
+        <source src="audio/Introducao-pok-firered.mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+
+    <audio id="audio3" loop>
+        <source src="audio/Pallet Town - Pokémon FireRedLeafGreen Soundtrack [ ezmp3.cc ].mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+
+    <div class="pokeball-container">
+        <div class="pokeball">
+            <div class="pokeball-top"></div>
+            <div class="pokeball-bottom"></div>
+            <div class="center-button"></div>
+        </div>
+        <div class="loading-container">
+            <div class="loading-spinner"></div>
+        </div>
+        <img src="imagem/logo.png" alt="Pokemon Logo" class="pokemon-logo">
+    </div>
+
+    <button id="startButton">Iniciar</button>
+
+    <!-- PÁGINA PRINCIPAL-->
+
+    <!-- NAVBAR-->
+
+    <nav class="navbar" id="navbar">
+        <img src="imagem/logo.png" alt="Pokemon Logo" class="navbar-logo">
+        <ul>
+            <li class="nav-item nav-hidden"><a href="#inicio"> HOME </a></li>
+            <li class="nav-item nav-hidden"><a href="#funcionalidade1"> COMPARADOR </a></li>
+            <li class="nav-item nav-hidden"><a href="#funcionalidade2"> EVOLUÇÕES </a></li>
+            <li class="nav-item nav-hidden"><a href="#funcionalidade3"> EQUIPES </a></li>
+        </ul>
+        <div class="pokeball-indicator" id="pokeballIndicator"></div>
+    </nav>
+
+
+    <!--INÍCIO-->
+
+    <div id="inicio" class="hidden">
+        <img src="imagem/professor-carvalho.png" alt="Professor Carvalho" class="inicio-prof-carvalho">
+        <img src="imagem/nidoran-f.png" alt="Nidoran F" class="inicio-nidoran">
+        <div class="inicio-texto">
+            <h1>Bem-vindo ao Pokémon World!</h1>
+            <br>
+            <p>
+                Este site é uma homenagem ao universo Pokémon, onde você pode explorar a rica história dos jogos e
+                interagir com personagens icônicos.
+                Descubra as funcionalidades incríveis que preparamos para você:
+            </p>
+            <br>
+            <ul>
+                <li><strong>Comparador de Pokémon:</strong> Compare stats, habilidades e características dos seus
+                    Pokémon favoritos.</li>
+                <li><strong>Árvore de Evoluções:</strong> Conheça as diferentes evoluções dos Pokémon e como
+                    alcançá-las.</li>
+                <li><strong>Construtor de Equipes:</strong> Monte sua equipe dos sonhos e prepare-se para as batalhas!
+                </li>
+            </ul>
+        </div>
+
+        <button id="buttonFuncao1"> Press Start </button>
+
+    </div>
+
+
+
+    <!--Funcionalidade 1-->
+    <div id="funcionalidade1" class="hide-funcionalidade">
+        <h2>Funcionalidade 1</h2>
+        <p>Descrição da Funcionalidade 1.</p>
+
+        <div class="input-container">
+            <div class="input-container-input">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" class="input1Func1" placeholder="Primeiro Pokémon" id="poke1">
+                <datalist id="pokemons">
+
+                </datalist>
+            </div>
+
+            <div class="input-container-input">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" class="input2Func1" placeholder="Segundo Pokémon" id="poke2">
+                <datalist id="pokemons">
+
+                </datalist>
+
+            </div>
+
+        </div>
+
+        <div class="pokemonContainer" id="pokemonContainer">
+
+                <div class="containerpokemon1" id="containerpokemon1">
+                    <div class="pokemon1"></div>
+                </div>
+                <i class="fa-solid fa-x"></i>
+                
+                <div class="containerpokemon2" id="containerpokemon2">
+                    <div class="pokemon2"></div>
+                </div>
+
+
+           
+        </div>
+
+    </div>
+
+    <!--Funcionalidade 2-->
+    <div id="funcionalidade2" class="hide-funcionalidade">
+        <h2>Funcionalidade 2</h2>
+        <p>Descrição da Funcionalidade 2.</p>
+
+
+        <div class="input-container2">
+            <div class="input-container-input2">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" class="input1Func2" placeholder="Digite o Pokémon" id="pokeArvore">
+            </div>
+
+
+            <div class="pokemonContainer2" id="pokemonContainer2">
+
+                <div class="containerpokemon1-2" id="containerpokemon1_2">
+                    <div class="pokemon1-2"></div>
+                    <p class="pokemon-texto1-2"></p>
+                </div>
+                
+                <i class="fa-solid fa-chevron-right"></i>
+
+                <div class="containerpokemon2-2" id="containerpokemon2_2">
+                    <div class="pokemon2-2"></div>
+                    <p class="pokemon-texto2-2"></p>
+                </div>
+
+                <i class="fa-solid fa-chevron-right"></i>
+
+                <div class="containerpokemon3-2" id="containerpokemon3_2">
+                    <div class="pokemon3-2"></div>
+                    <p class="pokemon-texto3-2"></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--Funcionalidade 3-->
+    <div id="funcionalidade3" class="hide-funcionalidade">
+
+        <div class="pokemonContainer3">
+
+            <div class="containerpokemon1-3">
+                <i class="fa-solid fa-plus toggle-input-icon"></i>
+                <input type="text" class="hidden-input" placeholder="Escolha seu Pokémon" id="poke1-eqp">
+                <div class="pokemon1-3" id="pokemon1eqp"></div>
+                <p class="pokemon-texto1-3"></p>
+            </div>
+
+            <div class="containerpokemon2-3">
+                <i class="fa-solid fa-plus toggle-input-icon"></i>
+                <input type="text" class="hidden-input" placeholder="Escolha seu Pokémon" id="poke2-eqp">
+                <div class="pokemon2-3" id="pokemon2eqp"></div>
+                <p class="pokemon-texto2-3"></p>
+            </div>
+
+            <div class="containerpokemon3-3">
+                <i class="fa-solid fa-plus toggle-input-icon"></i>
+                <input type="text" class="hidden-input" placeholder="Escolha seu Pokémon" id="poke3-eqp">
+                <div class="pokemon3-3" id="pokemon3eqp"></div>
+                <p class="pokemon-texto3-3"></p>
+            </div>
+
+            <div class="containerpokemon4-3">
+                <i class="fa-solid fa-plus toggle-input-icon"></i>
+                <input type="text" class="hidden-input" placeholder="Escolha seu Pokémon" id="poke4-eqp">
+                <div class="pokemon4-3" id="pokemon4eqp"></div>
+                <p class="pokemon-texto4-3"></p>
+            </div>
+
+            <div class="containerpokemon5-3">
+                <i class="fa-solid fa-plus toggle-input-icon"></i>
+                <input type="text" class="hidden-input" placeholder="Escolha seu Pokémon" id="poke5-eqp">
+                <div class="pokemon5-3" id="pokemon5eqp"></div>
+                <p class="pokemon-texto5-3"></p>
+            </div>
+
+            <div class="containerpokemon6-3">
+                <i class="fa-solid fa-plus toggle-input-icon"></i>
+                <input type="text" class="hidden-input" placeholder="Escolha seu Pokémon" id="poke6-eqp">
+                <div class="pokemon6-3" id="pokemon6eqp"></div>
+                <p class="pokemon-texto6-3"></p>
+            </div>
+            <button id="calcular-media">Ver média da equipe</button>
+            <div id="mediaValores"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
