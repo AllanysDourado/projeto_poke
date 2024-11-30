@@ -467,6 +467,22 @@ body {
     width: 100%;
 }
 
+#funcionalidade1 h2 {
+    text-align: justify;
+    font-family: 'Pokemon Classic';
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+#funcionalidade1 .funcText1 {
+    text-align: justify;
+    font-family: 'Pokemon Classic';
+    font-size: 13px;
+    margin-left: 50px;
+    width: 40%;
+}
+
 .input-container {
     display: flex;
     justify-content: space-between;
@@ -490,6 +506,7 @@ body {
     flex: 1;
     min-width: 0;
     display: flex;
+    margin-top: 40px;
 }
 
 
@@ -565,12 +582,13 @@ body {
     align-items: center;
     justify-content: center;
 }
-.pokemon1 img,  
+
+.pokemon1 img,
 .pokemon2 img {
     width: 400px;
     height: 400px;
-    
-  
+
+
 }
 
 .pokemon-texto1,
@@ -598,6 +616,23 @@ body {
     top: 200%;
     height: 100vh;
     width: 100%;
+    margin-top: 100px;
+}
+
+#funcionalidade2 h2 {
+    text-align: justify;
+    font-family: 'Pokemon Classic';
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+#funcionalidade2 .funcText2 {
+    text-align: justify;
+    font-family: 'Pokemon Classic';
+    font-size: 13px;
+    margin-left: 50px;
+    width: 40%;
 }
 
 .input-container2 {
@@ -613,7 +648,7 @@ body {
 
 .input-container-input2 {
     position: relative;
-    /* Certifique-se de que ambos os containers têm isso */
+    margin-top: 40px;
 }
 
 .input-container-input2 input {
@@ -672,6 +707,7 @@ body {
     align-items: center;
     justify-content: center;
 }
+
 .pokemon1-2 img,
 .pokemon2-2 img,
 .pokemon3-2 img {
@@ -703,10 +739,25 @@ body {
 #funcionalidade3 {
     position: absolute;
     top: 300%;
-    height: 90%;
+    height: 100vh;
     width: 100%;
+    margin-top: 100px;
+}
+#funcionalidade3 h2 {
+    text-align: justify;
+    font-family: 'Pokemon Classic';
+    font-size: 20px;
+    margin-top: 30px;
+    margin-left: 50px;
 }
 
+#funcionalidade3 .funcText3 {
+    text-align: justify;
+    font-family: 'Pokemon Classic';
+    font-size: 13px;
+    margin-left: 50px;
+    width: 40%;
+}
 .pokemonContainer3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -717,6 +768,7 @@ body {
     /* Ajuste conforme necessário */
     margin: 0 auto;
     /* Centralizar o container */
+    margin-top: 40px;
 }
 
 .pokemonContainer3 .containerpokemon1-3,
@@ -756,6 +808,7 @@ body {
     align-items: center;
     justify-content: center;
 }
+
 .containerpokemon1-3 img,
 .containerpokemon2-3 img,
 .containerpokemon3-3 img,
@@ -767,7 +820,7 @@ body {
     padding: 20px;
     text-align: center;
     border-radius: 10px;
-   
+
 }
 
 .toggle-input-icon {
@@ -789,10 +842,51 @@ body {
     border: 1px solid #ccc;
     border-radius: 4px;
 }
+
+.pokemonContainer3 #calcular-media {
+
+    position: absolute;
+    right: 40%;
+    top: 85%;
+    margin-top: 80px;
+    padding: 10px 20px;
+    font-family: 'Pokemon Classic';
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #FFF;
+    background-color: #3C5AA6;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    z-index: 1;
+    width: auto;
+    max-width: 90%;
+}
+
+#calcular-media :hover {
+    background-color: #1D2C5E;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+}
+
+.pokemonContainer3 #mediaValores {
+    position: absolute;
+    right: 5%;
+    top: 25%;
+    text-align: justify;
+    font-family: 'Pokemon Classic';
+    font-size: 15px;
+}
+
 /* Tipo único: Electric */
 .electric {
     background: #F6AD3A;
 }
+
 .electric-bug {
     background: linear-gradient(to bottom, #F6AD3A 20%, rgba(246, 173, 58, 0.5) 30%, #91C12F 100%);
 }
@@ -870,9 +964,11 @@ body {
 .bug-grass {
     background: linear-gradient(to bottom, #91C12F 20%, rgba(145, 193, 47, 0.5) 30%, #63BC5A 100%);
 }
+
 .bug-electric {
     background: linear-gradient(to bottom, #91C12F 20%, rgba(145, 193, 47, 0.5) 30%, #F6AD3A 100%);
 }
+
 .bug-fairy {
     background: linear-gradient(to bottom, #91C12F 20%, rgba(145, 193, 47, 0.5) 30%, #EC8FE6 100%);
 }
@@ -932,6 +1028,7 @@ body {
 .bug-poison {
     background: linear-gradient(to bottom, #91C12F 20%, rgba(145, 193, 47, 0.5) 30%, #B567CE 100%);
 }
+
 /* Tipo único: Grass */
 .grass {
     background: #63BC5A;
@@ -942,6 +1039,7 @@ body {
 .grass-electric {
     background: linear-gradient(to bottom, #63BC5A 20%, rgba(99, 188, 90, 0.5) 30%, #F6AD3A 100%);
 }
+
 .grass-fairy {
     background: linear-gradient(to bottom, #63BC5A 20%, rgba(99, 188, 90, 0.5) 30%, #EC8FE6 100%);
 }
@@ -1001,6 +1099,7 @@ body {
 .grass-poison {
     background: linear-gradient(to bottom, #63BC5A 20%, rgba(99, 188, 90, 0.5) 30%, #B567CE 100%);
 }
+
 /* Tipo único: Fairy */
 .fairy {
     background: #EC8FE6;
@@ -1055,7 +1154,8 @@ body {
     background: linear-gradient(to bottom, #EC8FE6 20%, rgba(236, 143, 230, 0.5) 30%, #73CEC0 100%);
 }
 
-.fairy-rock, .rock-fairy {
+.fairy-rock,
+.rock-fairy {
     background: linear-gradient(to bottom, #EC8FE6 20%, rgba(236, 143, 230, 0.5) 30%, #C5B78C 100%);
 }
 
@@ -1149,6 +1249,7 @@ body {
 .normal-poison {
     background: linear-gradient(to bottom, #919AA2 20%, rgba(145, 154, 162, 0.5) 30%, #B567CE 100%);
 }
+
 /* Tipo único: Dragon */
 .dragon {
     background: #0B6DC3;
@@ -1222,6 +1323,7 @@ body {
 .dragon-poison {
     background: linear-gradient(to bottom, #0B6DC3 20%, rgba(11, 109, 195, 0.5) 30%, #B567CE 100%);
 }
+
 /* Tipo único: Psychic */
 .psychic {
     background: #FA7179;
@@ -1295,6 +1397,7 @@ body {
 .psychic-poison {
     background: linear-gradient(to bottom, #FA7179 20%, rgba(250, 113, 121, 0.5) 30%, #B567CE 100%);
 }
+
 /* Tipo único: Ghost */
 .ghost {
     background: #5269AD;
@@ -1368,6 +1471,7 @@ body {
 .ghost-poison {
     background: linear-gradient(to bottom, #5269AD 20%, rgba(82, 105, 173, 0.5) 30%, #B567CE 100%);
 }
+
 /* Tipo único: Ground */
 .ground {
     background: #D97845;
@@ -1441,6 +1545,7 @@ body {
 .ground-poison {
     background: linear-gradient(to bottom, #D97845 20%, rgba(217, 120, 69, 0.5) 30%, #B567CE 100%);
 }
+
 /* Tipo único: Steel */
 .steel {
     background: #5A8EA2;
@@ -1514,6 +1619,7 @@ body {
 .steel-poison {
     background: linear-gradient(to bottom, #5A8EA2 20%, rgba(90, 142, 162, 0.5) 30%, #B567CE 100%);
 }
+
 /* Tipo único: Fire */
 .fire {
     background: #FF9D55;
@@ -1587,6 +1693,7 @@ body {
 .fire-poison {
     background: linear-gradient(to bottom, #FF9D55 20%, rgba(255, 157, 85, 0.5) 30%, #B567CE 100%);
 }
+
 /* Tipo único: Flying */
 .flying {
     background: #89AAE3;
@@ -1660,6 +1767,7 @@ body {
 .flying-poison {
     background: linear-gradient(to bottom, #89AAE3 20%, rgba(137, 170, 227, 0.5) 30%, #B567CE 100%);
 }
+
 /* Tipo único: Ice */
 .ice {
     background: #73CEC0;
@@ -1733,6 +1841,7 @@ body {
 .ice-poison {
     background: linear-gradient(to bottom, #73CEC0 20%, rgba(115, 206, 192, 0.5) 30%, #B567CE 100%);
 }
+
 /* Tipo único: Rock */
 .rock {
     background: #C5B78C;
@@ -1806,6 +1915,7 @@ body {
 .rock-poison {
     background: linear-gradient(to bottom, #C5B78C 20%, rgba(197, 183, 140, 0.5) 30%, #B567CE 100%);
 }
+
 /* Tipo único: Dark */
 .dark {
     background: #5A5465;
@@ -1879,6 +1989,7 @@ body {
 .dark-poison {
     background: linear-gradient(to bottom, #5A5465 20%, rgba(90, 84, 101, 0.5) 30%, #B567CE 100%);
 }
+
 /* Tipo único: Water */
 .water {
     background: #5090D6;
@@ -1952,6 +2063,7 @@ body {
 .water-poison {
     background: linear-gradient(to bottom, #5090D6 20%, rgba(80, 144, 214, 0.5) 30%, #B567CE 100%);
 }
+
 /* Tipo único: Fighting */
 .fighting {
     background: #CE416B;
@@ -2024,7 +2136,9 @@ body {
 
 .fighting-poison {
     background: linear-gradient(to bottom, #CE416B 20%, rgba(206, 65, 107, 0.5) 30%, #B567CE 100%);
-}/* Tipo único: Poison */
+}
+
+/* Tipo único: Poison */
 .poison {
     background: #B567CE;
 }
